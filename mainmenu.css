@@ -160,7 +160,7 @@ nav a:hover {
 .song-item:hover {
     background-color: #303549;
     border-color: #8b7cff;
-    transform: translateY(-4px);
+    transform: translateY(-4px);        /*浮き上がり*/
 }
 
 
@@ -179,19 +179,19 @@ nav a:hover {
 
 /* 設定画面の背景 */
 .modal {
-    display: none;
+    display: none;  /*非表示設定*/
 
-    position: fixed;
-    top: 0;
+    position: fixed;    /*画面の固定*/
+    top: 0;         /*画面端設定*/
     left: 0;
 
     width: 100%;
     height: 100%;
-    z-index: 1000;
+    z-index: 1000;  /*重なり*/
 
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.7);   /*半透明*/
 
-    justify-content: center;
+    justify-content: center;    /*設定画面を中央に*/
     align-items: center;
 }
 
@@ -306,7 +306,7 @@ nav a:hover {
 .time-buttons {
     display: grid;
 
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);      /*4列に分ける*/
 
     gap: 10px;
 }
@@ -386,37 +386,3 @@ nav a:hover {
 }
 
 
-/* =================================
-   スマートフォン対応
-================================= */
-
-@media (max-width: 600px) {
-
-    .sidebar {
-        width: 180px;
-        padding: 20px 12px;
-    }
-
-    .main-content {
-        padding: 20px;
-    }
-
-    .title-area {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 15px;
-    }
-
-    .title-area input {
-        width: 100%;
-    }
-
-    .modal-content {
-        padding: 20px;
-    }
-
-    .time-buttons {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-}
