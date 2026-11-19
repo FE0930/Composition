@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="QXX9yay_X0ioMGqg73AO" name="ページ-1">
-        <mxGraphModel dx="2522" dy="827" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1698" dy="651" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -43,7 +43,7 @@
                 <mxCell id="0yU5smJSfYtMtqAfQl67-19" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="バンド楽器" vertex="1">
                     <mxGeometry height="60" width="120" x="260" y="420" as="geometry"/>
                 </mxCell>
-                <mxCell id="0yU5smJSfYtMtqAfQl67-20" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="固定" vertex="1">
+                <mxCell id="0yU5smJSfYtMtqAfQl67-20" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="✅固定" vertex="1">
                     <mxGeometry height="60" width="120" x="100" y="320" as="geometry"/>
                 </mxCell>
                 <mxCell id="0yU5smJSfYtMtqAfQl67-21" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;初心者向け作曲ソフト&lt;/font&gt;&lt;/b&gt;" vertex="1">
@@ -58,7 +58,7 @@
                 <mxCell id="0yU5smJSfYtMtqAfQl67-25" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="ボイス" vertex="1">
                     <mxGeometry height="60" width="120" x="260" y="620" as="geometry"/>
                 </mxCell>
-                <mxCell id="0yU5smJSfYtMtqAfQl67-27" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="入力" vertex="1">
+                <mxCell id="0yU5smJSfYtMtqAfQl67-27" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="✅入力" vertex="1">
                     <mxGeometry height="60" width="120" x="100" y="420" as="geometry"/>
                 </mxCell>
                 <mxCell id="0yU5smJSfYtMtqAfQl67-28" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="4分音符、休符のみ" vertex="1">
@@ -145,7 +145,7 @@
                 <mxCell id="76M95xlVN84ZFQYbNyE1-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="基本設定を行う" vertex="1">
                     <mxGeometry height="60" width="120" x="-340" y="230" as="geometry"/>
                 </mxCell>
-                <mxCell id="76M95xlVN84ZFQYbNyE1-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="新規楽譜作成" vertex="1">
+                <mxCell id="76M95xlVN84ZFQYbNyE1-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="✅新規楽譜作成" vertex="1">
                     <mxGeometry height="60" width="120" x="-475" y="320" as="geometry"/>
                 </mxCell>
                 <mxCell id="76M95xlVN84ZFQYbNyE1-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="過去データを見れる" vertex="1">
@@ -154,7 +154,7 @@
                 <mxCell id="76M95xlVN84ZFQYbNyE1-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="検索機能" vertex="1">
                     <mxGeometry height="60" width="120" x="-475" y="525" as="geometry"/>
                 </mxCell>
-                <mxCell id="76M95xlVN84ZFQYbNyE1-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="BPM・拍子の決定" vertex="1">
+                <mxCell id="76M95xlVN84ZFQYbNyE1-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="✅BPM・拍子の決定" vertex="1">
                     <mxGeometry height="60" width="120" x="-340" y="320" as="geometry"/>
                 </mxCell>
                 <mxCell id="76M95xlVN84ZFQYbNyE1-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="楽器の選択" vertex="1">

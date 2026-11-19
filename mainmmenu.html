@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Composer</title>
+    <link rel="stylesheet" href="mainmenu.css">
+</head>
+
+<body>
+
+    <!-- ヘッダー -->
+    <header>
+
+        <div class="logo">
+            Composition
+        </div>
+
+        <nav>
+            <a href="#">楽譜ライブラリ</a>
+        </nav>
+
+        <div class="user-icon">👤</div>
+
+    </header>
+
+
+    <!-- メイン部分 -->
+    <div class="container">
+
+        <!-- サイドバー -->
+        <aside class="sidebar">
+
+            <h2>楽譜ライブラリ</h2>
+
+            <!-- 楽譜作成ボタン -->
+            <button class="create-btn" onclick="openModal()">
+                楽譜を作成
+            </button>
+
+        </aside>
+
+
+        <!-- メインコンテンツ -->
+        <main class="main-content">
+
+            <div class="title-area">
+
+                <h1>あなたの楽譜</h1>
+
+                <input
+                    type="text"
+                    placeholder="楽譜を検索">
+
+            </div>
+
+
+            <!-- 楽譜一覧 -->
+            <div class="song-list">
+
+                <div class="song-item">
+                    <div class="song-name">
+                        ♪ オリジナル
+                    </div>
+                </div>
+
+                <div class="song-item">
+                    <div class="song-name">
+                        ♪ サンプル
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <!-- ================================= -->
+    <!-- 楽譜作成画面（ここが②の部分） -->
+    <!-- ================================= -->
+
+    <div class="modal" id="modal">
+
+        <div class="modal-content">
+
+            <h2>新しい楽譜を作成</h2>
+
+
+            <!-- 曲名 -->
+            <div class="setting-item">
+
+                <label>曲名</label>
+
+                <input
+                    type="text"
+                    id="song-title"
+                    value="新しい曲">
+
+            </div>
+
+
+            <!-- BPM設定 -->
+            <div class="setting-item">
+
+                <label>BPM（テンポ）</label>
+
+                <div class="bpm-control">
+
+                    <button onclick="changeBPM(-1)">
+                        －
+                    </button>
+
+                    <input
+                        type="number"
+                        id="bpm"
+                        value="120"
+                        min="1"
+                        max="300">
+
+                    <button onclick="changeBPM(1)">
+                        ＋
+                    </button>
+
+                </div>
+
+                <p>標準的なテンポは120 BPMです。</p>
+
+            </div>
+
+
+            <!-- 拍子設定 -->
+            <div class="setting-item">
+
+                <label>拍子</label>
+
+                <div class="time-buttons">
+
+                    <button class="selected"
+                        onclick="selectTime(this)">
+                        4/4
+                    </button>
+
+                    <button onclick="selectTime(this)">
+                        3/4
+                    </button>
+
+                    <button onclick="selectTime(this)">
+                        6/8
+                    </button>
+
+                    <button onclick="selectTime(this)">
+                        2/4
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- ボタン -->
+            <div class="modal-buttons">
+
+                <button class="cancel-btn"
+                    onclick="closeModal()">
+                    キャンセル
+                </button>
+
+                <button class="confirm-btn">
+                    作成する
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script>
+
+        // 設定画面を開く
+        function openModal() {
+
+            document.getElementById("modal")
+                .classList.add("show");
+
+        }
+
+
+        // 設定画面を閉じる
+        function closeModal() {
+
+            document.getElementById("modal")
+                .classList.remove("show");
+
+        }
+
+
+        // BPMを変更する
+        function changeBPM(value) {
+
+            const bpm = document.getElementById("bpm");
+
+            let number = Number(bpm.value) + value;
+
+            if (number < 1) number = 1;
+
+            if (number > 300) number = 300;
+
+            bpm.value = number;
+
+        }
+
+
+        // 拍子を選択する
+        function selectTime(button) {
+
+            const buttons =
+                document.querySelectorAll(".time-buttons button");
+
+            buttons.forEach(function(item) {
+
+                item.classList.remove("selected");
+
+            });
+
+            button.classList.add("selected");
+
+        }
+
+    </script>
+
+</body>
+</html>
